@@ -1,0 +1,259 @@
+%
+% Resume - Jayesh Vilas Wankhede
+% Based on NIT Patna Resume Template v2.1
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{array}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\geometry{left=1.2cm, top=0.6cm, right=1.0cm, bottom=0.6cm}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.2mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.3mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Define personal information
+\newcommand{\name}{Jayesh Vilas Wankhede}
+\newcommand{\phone}{9699424463}
+\newcommand{\emailb}{jaywan5588@gmail.com}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{logo.png}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & \socialicon{\faPhone} +91-\phone \\
+  Bachelor of Technology & \socialicon{\faEnvelope} \href{mailto:\emailb}{\emailb} \\
+  Artificial Intelligence and Data Science Engineering & \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/jayesh-wankhede-a-programmer-web-designer/}{LinkedIn Profile} \\
+  Vishwakarma Institute of Information Technology, Pune
+  & \socialicon{\faGithub} \href{https://github.com/jay-3107}{GitHub Profile} \\
+\end{tabularx}
+}
+\vspace{-2mm}
+
+%----------EDUCATION-----------------
+\section{\textbf{Education}}
+\vspace{1mm}
+\setlength{\tabcolsep}{5pt}
+\small
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}p{8cm}|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{2.5cm}|}
+  \hline
+  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year} \\
+  \hline
+  B.Tech. in AI \& DS & Vishwakarma Institute of Information Technology, Pune & 8.84 & 2026 \\
+  \hline
+  Diploma in Computer Engg. & MSBTE & 89.66\% & 2023 \\
+  \hline
+\end{tabularx}
+\vspace{-4mm}
+
+%----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Syngenta Global Capability Center Pvt. Ltd. [\href{https://www.syngentagroup.com}{\faIcon{globe}}]}{Pune}
+    {Software Engineer Intern}{Dec 2025 -- Present}
+    \resumeItemListStart
+      \item Built a \textbf{multi-agent AI system} with 6 specialized agents (Demand Analyst, Forecast, Scenario Detection, Feature Driver, Model Metrics, Data Drift) orchestrated via \textbf{n8n workflows on Databricks} for demand forecasting across Brazil and Argentina.
+      \item \textbf{Optimized Scenario Detection Agent}: restructured from 10-node LLM-dependent to 44-node SQL-first pipeline with 5 Databricks SQL queries, reducing per-query LLM token consumption.
+      \item Integrated a \textbf{Databricks RAG pipeline} for procurement, enabling AI-powered search across supplier data, pricing, and SLA contracts --- deployed end-to-end.
+      \item Built \textbf{evaluation and test suites} across all 6 agents covering forecast accuracy, scenario correctness, and data drift detection.
+      \item Developed Python scripts to \textbf{automate n8n workflow deployment} across dev and production; mitigated \textbf{SQL injection} risks in Forecast and Data Drift agents.
+      \item Refactored scenario selection from \textbf{hardcoded Argentina-specific to dynamic multi-country} architecture; conducted SLA experimentation with stakeholder feedback loops.
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Dravita Pvt. Ltd. [\href{https://www.dravita.com}{\faIcon{globe}}]}{Pune}
+    {Software Developer}{}
+    \resumeItemListStart
+      \item Built backend for \textbf{Healthree}, a digital healthcare platform with personalized nutrition planning and product-scan dietary recommendations using Python and \textbf{Docker/Azurite}.
+      \item Integrated \textbf{Ayushman Bharat Digital Mission (ABDM)} APIs for secure access to medical documents across hospitals.
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+    {AI-Powered E-Commerce Recommendation System}
+    {Tools: React.js, Node.js, Express.js, MongoDB, SQLite, LangChain, Groq Llama-3.3-70B}
+    {}
+    {\href{https://recommendationsystem-frontend.onrender.com/}{\textcolor{darkblue}{\faGlobe}}~\href{https://github.com/jay-3107/RecommendationSystem}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+    \item Built an AI-driven chatbot using \textbf{LangChain + Groq Llama-3.3-70B} that handles natural language queries for products, ratings, orders, and cart with SQL-based data retrieval.
+\resumeItemListEnd
+
+\resumeProject
+    {Website Chatbot for Indian Aviation Academy (IAA)}
+    {Tools: MERN Stack, Python, LLaMA 3.1, RAG Pipeline}
+    {}
+    {\href{https://github.com/jay-3107/IAA}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+    \item Implemented a quantized \textbf{LLaMA 3.1 model with RAG pipeline} delivering contextual responses from an admin-managed Q\&A dataset --- reduced need for frequent model fine-tuning.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%----------SKILLS-----------------
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+\resumeSubItem{Programming}{: Python, C/C++, OOPS, JavaScript}
+\resumeSubItem{AI/ML \& Data}{: Machine Learning, Gen AI, LangChain, RAG, Prompt Engineering, Multi-Agent Systems}
+\resumeSubItem{Development}{: Full Stack (MERN), FastAPI, REST APIs, Git, Docker, n8n, Databricks}
+\resumeSubItem{Databases}{: MySQL, MongoDB, PostgreSQL}
+\resumeHeadingSkillEnd
+\vspace{-2mm}
+
+%----------CERTIFICATIONS-----------------
+\section{\textbf{Certifications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR
+    {Full Stack Development}
+    {, \href{https://drive.google.com/file/d/1Or_knG6CGqp8PKmoV-nXdrPdreg6mVx4/view}{JavaScript, MySQL, CSS --- Certificate}}
+    {}
+\resumePOR
+    {IBM Gen AI}
+    {, \href{https://coursera.org/share/310839f1d45ce4adc938be58b01e2875}{Coursera --- Certificate}}
+    {}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%----------ACHIEVEMENTS-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{}{Rank 3 in Diploma in Computer Science}{}
+\resumePOR{}{\href{https://drive.google.com/drive/folders/1Nt0_glk4B64tJG0jDHx0oZ2C355bHIxj?usp=sharing}{Phoenix 2k23} --- Awarded \textbf{2nd rank} for functional website, innovative idea, and working prototype}{}
+\resumePOR{}{\href{https://drive.google.com/drive/folders/1X1FbNvyCMDfTDSZkzQ1-TPfU-WUTYp49?usp=sharing}{Creativepreneur} --- Earned \textbf{1st rank} for innovative project with prototype and website}{}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+\end{document}

@@ -1,0 +1,399 @@
+%-------------------------
+% Resume in Latex
+% Author : Chandramouli Haldar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt} % Fix for the footskip warning}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Jayesh Vilas Wankhede } % Your Name
+\newcommand{\course}{B.Tech.} % Your Course
+\newcommand{\department}{ Artificial Intelligence and Data Science Engineering}
+\newcommand{\roll}{XXXXXXXXX} % Your Roll No.
+\newcommand{\phone}{9699424463} % Your Phone Number
+\newcommand{\emaila}{jaywan5588@gmail.com} %Email 1
+\newcommand{\emailb}{jaywan5588@gmail.com} %Email 2
+\newcommand{\github}{USERID} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{LINKEDINUSERID} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+{%
+% \includegraphics[width=2cm,clip]{PHOTO.jpeg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone \\
+  \course & \href{mailto:\emailb}{\emailb} \\
+  Artificial Intelligence and Data Science Engineering. & \href{https://www.linkedin.com/in/jayesh-wankhede-a-programmer-web-designer/}{\color{blue}Linkedin Profile } \\
+  Vishwakarma Institute of Information Technology, Pune.
+  & \href{https://github.com/jay-3107}{\color{blue}Github Link} \\
+\end{tabularx}
+}
+\vspace{-2mm}
+
+
+\section{Education}
+\vspace{1mm}
+
+\textbf{Vishwakarma Institute of Information Technology, Pune} \hfill \textbf{2026 } \\
+\textit{B.Tech. in Artificial Intelligence \& Data Science} \hfill \textit{CGPA: 8.84} \\
+
+\vspace{0.5mm}
+
+\textbf{MSBTE} \hfill \textbf{2023} \\
+\textit{Diploma in Computer Engineering} \hfill \textit{Percentage: 89.66\%} \\
+
+\vspace{0.5mm}
+
+\textbf{Maharashtra State Board of Education} \hfill \textbf{2020} \\
+\textit{SSC} \hfill \textit{Percentage: 92.80\%} \\
+
+
+
+% %-----------Technical Skills-----------------
+\section{Technical Skills}
+\resumeHeadingSkillStart
+
+  \resumeSubItem{Programming}
+    {Python, C/C++, OOPS, JavaScript}
+  \resumeSubItem{Database Management}
+    {DBMS, MySQL, MongoDB, PostgreSQL}
+  \resumeSubItem{Development Skills}
+    {Full Stack Development (MERN), FastAPI, REST APIs, GitHub, Version Control (Git), API Integration}
+  \resumeSubItem{Artificial Intelligence \& Machine Learning}
+    {Machine Learning, Gen AI, LangChain, RAG, Prompt Engineering, Multi-Agent Systems}
+  \resumeSubItem{DevOps \& Tools}
+    {Docker, n8n, Databricks}
+  \resumeSubItem{Course Work}
+    {Computer Networking}
+    \vspace{-1mm} % Adjust value as needed
+\resumeHeadingSkillEnd
+
+
+
+% %-----------EXPERIENCE-----------------
+ \section{Experience}
+   \resumeSubHeadingListStart
+
+   \resumeSubheading
+    {Syngenta Global Capability Center Private Limited}{}
+    {Software Engineer Intern}{Dec 2025 -- Present}
+    \resumeItemListStart
+        \item {Developed and maintained a \textbf{multi-agent AI system} comprising 6 specialized agents (Demand Analyst, Forecast, Scenario Detection, Feature Driver, Model Metrics, Data Drift) orchestrated via \textbf{n8n workflows} on Databricks, serving agricultural demand forecasting for the Brazil and Argentina markets.}
+        \item {\textbf{Optimized the Scenario Detection Agent} by restructuring it from a 10-node LLM-dependent architecture to a 44-node SQL-first pipeline with 5 direct Databricks SQL queries, significantly reducing per-query LLM token consumption while improving scenario matching accuracy.}
+        \item {Designed and integrated a \textbf{Databricks RAG pipeline} for the procurement project, enabling AI-powered search across supplier data, pricing, and SLA contracts --- implemented, code-reviewed, and deployed end-to-end.}
+        \item {Expanded agent \textbf{evaluation and correctness validation} across all 6 agents, building structured test suites and validation prompts covering forecast accuracy, scenario correctness, and data drift detection.}
+        \item {Built Python automation scripts to \textbf{deploy, upload, and activate n8n workflows} across development and production environments, reducing manual deployment effort.}
+        \item {Strengthened system security by mitigating \textbf{SQL injection} risks in the Forecast and Data Drift agents through input validation and query hardening.}
+        \item {Implemented \textbf{multi-country support} by refactoring scenario selection logic from hardcoded Argentina-specific flows to a dynamic, country-agnostic architecture.}
+        \item {Conducted \textbf{SLA experimentation} including stakeholder feedback loops, RAG system extension, and contracts extraction pipeline development for the procurement project.}
+    \resumeItemListEnd
+
+
+  \resumeSubheading
+    {Dravita Pvt. Ltd.}{}
+    {Software Developer}{}%left curly braces madhe date ahe
+    \resumeItemListStart
+        \item {Contributed to the development of \textbf{Healthree}, a digital healthcare product offering features such as personalized nutrition planning and product-scan based dietary recommendations.}
+        \item {Designed and implemented the backend in Python with a  \textbf{scalable architecture, robust response handling, and error management.}}
+        \item {Created a well-structured \textbf{data schema} and followed a backend-first design approach, including defining APIs and core utility functions.}
+        \item {Utilized tools like \textbf{Azurite} and \textbf{Docker} for efficient local cloud testing and development.}
+        \item {Integrated \textbf{Ayushman Bharat Digital Mission (ABDM)} APIs to enable users to securely access and manage medical documents from multiple hospitals.}
+        \item {Developed user interface components using \textbf{Flutterflow} to deliver an intuitive and seamless experience.}
+    \resumeItemListEnd
+
+
+
+     \resumeSubheading
+    {Softanic Pvt. Ltd.}{%
+      \href{https://www.linkedin.com/posts/jayesh-wankhede-a-programmer-web-designer_expensetracker-financialfreedom-techinnovation-activity-7100451840512712704-uS1I?utm_source=share&utm_medium=member_desktop}{\color{blue}Video} \hspace{0.2cm}
+      \href{https://github.com/jay-3107/Expense-Tracker}{\color{blue}GitHub}
+    }
+    {Full Stack Developer }{}%left curly braces madhe date ahe
+    \resumeItemListStart
+      \item {Built a full-stack expense tracker using  \textbf{Python and React , MongoDB , Express , Node} }
+      \item {Implemented  \textbf{data visualization }components to give users better financial insights.}
+      \item {Applied coding best practices to enhance maintainability and performance.}
+      \item {Project: \textbf{"Expense Tracker"} – IT solution for efficient financial management.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+  {Web Planet Pvt. Ltd.}{%
+    \href{https://www.linkedin.com/posts/jayesh-wankhede-a-programmer-web-designer_jalsuchna-watermanagement-communityconnection-activity-7118518785669513216-xCjS?utm_source=share&utm_medium=member_desktop}{\color{blue}Video}
+  }
+  {Backend Developer }{  } %left curly braces madhe date ahe
+  \resumeItemListStart
+    \item {Developed backend services using  \textbf{React , MongoDB , Express , Node and Python} to automate water supply for Jalgaon Municipal Corporation.}
+    \item {Led the backend for "Jalsuchna" project with real-time updates and citizen feedback system.}
+    \item { \textbf{Enhanced operational efficiency and reduced manual errors.}}
+    \item {Collaborated with clients for requirements gathering and technical delivery.}
+  \resumeItemListEnd
+
+
+
+
+   \resumeSubHeadingListEnd
+ \vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+
+\resumeProject
+  {AI-Powered E-Commerce Recommendation System using SQL AI Agent} %Project Name
+  {Personalized Product Recommendations Using AI and SQL-Based Querying.} %Project Name, Location Name
+  {} %Event Dates
+  {\href{https://recommendationsystem-frontend.onrender.com/}{\color{blue}Website} \quad | \quad \href{https://github.com/jay-3107/RecommendationSystem}{\color{blue}GitHub}} % Links
+  \resumeItemListStart
+    \item {Description: Developed an AI-driven recommendation system for an e-commerce platform using SQL-based querying and\textbf{ LLM integration.}}
+    \item {Technologies: \textbf{React.js, Node.js, Express.js, MongoDB, SQLite, LangChain, Groq Llama-3.3-70B, OpenAI/Gemini API, hosted on Render.}}
+    \item {Developed an AI-powered chatbot for the e-commerce platform, enabling users to interact with the website using natural language. The chatbot handles queries about specific products, product information, ratings, latest updates, order details, and items in the shopping cart.}
+  \resumeItemListEnd
+
+
+    \resumeProject
+  {Pune Area Safety Scoring System using Web Scraping and MERN Stack} % Project Name
+  {Dynamic Crime-Based Safety Ranking of Pune Locations.} % Subtitle
+  {} % Event Dates
+  {\href{https://your-deployment-link.com}{\color{blue}} \quad \quad \href{https://github.com/jay-3107/RealTimeRouteTracker-}{\color{blue}GitHub}} % Links
+  \resumeItemListStart
+    \item {Description: Built a real-time safety scoring platform that scrapes live crime data for Pune areas and assigns a safety score (1–10) using AI-based analysis.}
+    \item {Technologies:\textbf{ React.js, Node.js, Express.js, MongoDB , Python .}}
+      \item {Scoring Methodology: Used frequency and severity of crime reports from web sources to calculate weighted safety scores for each area.}
+  \resumeItemListEnd
+
+
+
+    \resumeProject
+  {Website Chatbot for Indian Aviation Academy (IAA)} %Project Name
+  {Cost-Effective, Efficient Chatbot Utilizing Advanced NLP and LLM Techniques} %Project Name, Location Name
+  {} %Event Dates
+  {\href{https://github.com/jay-3107/IAA}{\color{blue}GitHub}} % Link
+  \resumeItemListStart
+    \item {Built an NLP-powered chatbot for Indian Aviation Academy that responds based on a pre-defined question-answer dataset managed through an admin dashboard. Enabled dynamic Q\&A retrieval by allowing admins to add and update content directly.}
+    \item {Technologies: \textbf{MERN , Python, LLaMA 3.1, Retrieval-Augmented Generation (RAG) Pipeline}}
+    \item {Outcome: Implemented a quantized LLaMA 3.1 model with RAG pipeline, delivering fast, contextually relevant responses in chunks, \textbf{reducing the need for frequent model fine-tuning}, and enhancing user experience.}
+  \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+% % %-----------Technical Skills-----------------
+% \section{Technical Skills}
+% \resumeHeadingSkillStart
+
+%   \resumeSubItem{Programming}
+%     {C/C++, OOPS, JavaScript}
+%   \resumeSubItem{Database Management}
+%     {DBMS, MySQL, MongoDB}
+%   \resumeSubItem{Development Skills}
+%     {Full Stack Development(MERN), GitHub, Version Control (Git), API Integration}
+%   \resumeSubItem{Artificial Intelligence \& Machine Learning}
+%     {Machine Learning, %Data Science
+%     , Gen AI,
+%     %Exploratory Data Analysis (EDA)   ,
+%     Langchain }
+%   \resumeSubItem{Course Work}
+%     {%Project Management
+%     Computer Networking}
+%     \vspace{-1mm} % Adjust value as needed
+% \resumeHeadingSkillEnd
+
+
+
+
+% %-----------CERTIFICATION-----------------
+\section{Certifications}
+\resumeHeadingSkillStart
+ \resumeSubItem{Full Stack Development Internship Certificate} % Category
+    { JavaScript , MySQL  , Cascading Style Sheets (CSS) \color{blue}{\href{https://drive.google.com/file/d/1Or_knG6CGqp8PKmoV-nXdrPdreg6mVx4/view}{Certificate}} }
+ \resumeSubItem{IBM GEN AI} % Category
+    { %Gen AI ,
+    %Data Visualization   ,
+    %Data Analysis with Python
+    \color{blue}{\href{https://coursera.org/share/310839f1d45ce4adc938be58b01e2875}{Certificate}} } % Skills
+% \resumeSubItem{Google Development Student Club}
+%  {Contributed to UI/UX design, enhancing creativity and execution using Figma, Canva, and graphic design.
+% \color{blue}{\href{https://drive.google.com/file/d/1wMpUc8ks9pYzIhJ_RsxxMeeGZDaGVNeb/view?usp=sharing}{ Certificate}} }
+
+ \resumeHeadingSkillEnd
+
+
+
+% \section{Positions of Responsibility}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+
+
+% \resumePOR{Senior Technical Lead} % Position
+%     { Google Developer Groups } % Club, Event
+%     {VIIT, Pune} % Tenure Period
+%     \resumeItemListStart
+%     \item {Led a cross-functional technical team and organized GEN AI workshops to drive skill development and successful tech integration.}
+
+% \resumeItemListEnd
+
+
+% \resumeSubHeadingListEnd
+\vspace{18pt}
+
+\vspace{-6mm}
+
+
+% \section{Achievements}
+% \vspace{-0.2mm}
+% \resumeSubHeadingListStart
+% \resumePOR{ Rank 3} % Award
+%     {  in Diploma in Computer Science
+%  \color{blue}{{}} } % Event
+%     {} %Event Year
+% \resumePOR{ Phoenix 2k23} % Award
+%     { Awarded \textbf{2nd rank} for a functional website, innovative idea, and working prototype. \color{blue}{\href{https://drive.google.com/drive/folders/1Nt0_glk4B64tJG0jDHx0oZ2C355bHIxj?usp=sharing}{Certificate}} } % Event
+%     {} %Event Year
+% \resumePOR{ Creativepreneur} % Award
+%     { Earned \textbf{1st rank} for an innovative project with a prototype and website. \color{blue}{\href{https://drive.google.com/drive/folders/1X1FbNvyCMDfTDSZkzQ1-TPfU-WUTYp49?usp=sharing}{Certificate}} } %Event
+%     {} %Event Year
+% \resumePOR{ Career to Corporate} % Award
+%     { Achieved \textbf{2nd rank} for showcasing aptitude, communication, and speaking skills. \color{blue}{\href{https://drive.google.com/drive/folders/1QaWynzQJJrnuRbrQWZY4TTvQ7w7Kbonf?usp=sharing} {Certificate}} } %Event
+%     {} %Event Year
+% \resumePOR{ Shark Tank} % Award
+%     { Recognized \textbf{2nd rank} for  demonstrating innovative solutions and effective teamwork.\color{blue}{\href{https://drive.google.com/drive/folders/1hM1DhlUZjJgs64u7SNTtgPvhunC2e-lh?usp=sharing} {Certificate}} } %Event
+%     {} %Event Year
+
+% \resumeSubHeadingListEnd
+\vspace{-2mm}
+% \hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+\newcommand{\dashitem}{\item[--]}
+
+\vspace{-4mm}
+
+%-------------------------------------------
+\end{document}
